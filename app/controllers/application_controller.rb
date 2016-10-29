@@ -2,6 +2,5 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   def hello
-    render json: {test: 3}
-  end
+    render html: "Hello, World"
 end
